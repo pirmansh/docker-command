@@ -65,7 +65,7 @@ $ docker container create --name mysqlserver mysql:5.6 #menambahkan nama contain
 - Membuat container dengan mengexpose port supaya dapat di akes dari luar container
 
 ```bash
-$ docker container create --name mysqlserver mysql:5.6 -p 3306:3306 # portluar:portInternalContainer
+$ docker container create --name mysqlserver -p 3306:3306 mysql:5.6 # portluar:portInternalContainer
 ```
 
 - Manjalankan container
