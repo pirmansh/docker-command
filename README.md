@@ -31,3 +31,15 @@ perintah di atas merupakan contoh untuk mendownload images mysql, dengan menggun
 ```bash
 $ docker pull mysql:5.6
 ```
+
+- Melihat daftar container yang sedang running
+
+```bash
+$ docker container ls
+```
+
+- Melihat daftar semua container
+
+```bash
+$ docker container ls --all
+```
