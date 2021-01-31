@@ -32,6 +32,12 @@ perintah di atas merupakan contoh untuk mendownload images mysql, dengan menggun
 $ docker pull mysql:5.6 #tambahkan tag :5.6
 ```
 
+- Menghapus images
+
+```bash
+$ docker image rm mysql:5.6
+```
+
 - Melihat daftar container yang sedang running
 
 ```bash
@@ -65,7 +71,7 @@ $ docker container create --name mysqlserver mysql:5.6 -p 3306:3306 # portluar:p
 - Manjalankan container
 
 ```bash
-$ docker container start mysqlserver #disini menjalakan mysql server yang tadi telah berhasil di download
+$ docker container start mysqlserver #contoh menjalakan contaier mysqlserver
 ```
 
 - Menghentikan service container
