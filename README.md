@@ -53,5 +53,29 @@ $ docker container create mysql:5.6
 Setiap container memiliki nama, dengan perintah di atas by default container tersebut akan memiliki random name, untuk memberikan nama secara spesifik gunakan perintah berikut:
 
 ```bash
-$ $ docker container create --name mysqlserver mysql:5.6 #menambahkan nama container
+$ docker container create --name mysqlserver mysql:5.6 #menambahkan nama container
+```
+
+- Membuat container dengan mengexpose port supaya dapat di akes dari luar container
+
+```bash
+$ docker container create --name mysqlserver mysql:5.6 -p 3306:3306 # portluar:portInternalContainer
+```
+
+- Manjalankan container
+
+```bash
+$ docker container start mysqlserver #disini menjalakan mysql server yang tadi telah berhasil di download
+```
+
+- Menghentikan service container
+
+```bash
+$ docker container stop mysqlserver
+```
+
+- Menghapus container
+
+```bash
+$ docker container rm mysqlserver
 ```
