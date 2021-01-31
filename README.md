@@ -91,3 +91,24 @@ $ docker container rm mysqlserver
 ```bash
 $ docker build --tag namaImage:tags . # contoh node:12, fungsi '.' memberitahu bahwa kita akan build dockerfile yang ada pada direktori tersebut
 ```
+
+## Membuat koneksi antar container
+
+- Membuat network container
+
+```bash
+$ docker network create test_network
+```
+
+- Menambahkan container ke dalam network
+
+```bash
+$ docker network connect container1
+$ docker network connect conatiner2
+```
+
+- Melihat daftar network
+
+```bash
+$ docker network ls
+```
