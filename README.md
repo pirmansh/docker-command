@@ -1,6 +1,6 @@
 ![Banner](banner.png)
 
-# Perintah-perintah dasar pada docker
+# Perintah-perintah dasar pada docker 🐳
 
 - Melihat versi docker
 
