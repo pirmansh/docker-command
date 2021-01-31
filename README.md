@@ -103,8 +103,15 @@ $ docker network create test_network
 - Menambahkan container ke dalam network
 
 ```bash
-$ docker network connect container1
-$ docker network connect conatiner2
+$ docker network connect test_network container1
+$ docker network connect test_network conatiner2
+```
+
+- Untuk memastikan bahwa container telah masuk ke dalam network yang telah dibuat
+
+```bash
+$ docker network inspect container1
+$ docker network inspect container2
 ```
 
 - Melihat daftar network
