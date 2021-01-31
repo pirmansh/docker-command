@@ -85,3 +85,9 @@ $ docker container stop mysqlserver
 ```bash
 $ docker container rm mysqlserver
 ```
+
+- Build images manual dari dockerfile
+
+```bash
+$ docker build --tag namaImage:tags . # contoh node:12, fungsi '.' memberitahu bahwa kita akan build dockerfile yang ada pada direktori tersebut
+```
